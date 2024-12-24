@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#StudySyncIcon{
+    padding-top: 0.6rem;
+    width: 2rem;
+    height: 1.8rem;
+}
+
+#HeadTitle{
+    display: inline;
+    font-size: 1.5rem;
+}
+
+#logo{
+    margin-left: 1rem;
+    color: black;
+}
+
+#nav{
+    width: 24rem;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding-top: 0.8rem;
+}
+
+.nav{
+    text-decoration: none;
+    color: rgb(114, 96, 96);
+    transition: color 0.2s linear;
+}
+.nav:hover{
+    color: blue
+}
+
+#Contact{
+    background-color: rgb(86, 86, 227);
+    margin-top: 0.55rem;
+    margin-right: 1rem;
+    height: 1.9rem;
+    border-radius: 0.4rem;
+    border-color: rgb(86, 86, 227) ;
+    transition: all 0.2s linear;
+    :hover{
+        background-color: rgb(71, 71, 213);
+        border-color:  rgb(71, 71, 213);
+        border-radius: 0.4rem;
+    }
+}
+
+#Contactlink{
+    padding: 0.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu{
+    margin-top: 0.74rem;
+    border: none;
+    padding-right: 1rem;
+    display: none;
+    background-color: white;
+}
+
+#menuitem{
+    width: 1.5rem;
+    height: 1.2rem;
+}
+
+#HeroSection{
+    display: flex;
+    gap: 17%;
+    align-content: center;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#HeroImage{
+    width: 90rem;
+    height: 28rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    /* animation: righttoleft 1s; */
+}
+/* @keyframes righttoleft{
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    50%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+} */
+
+#HeroContainer{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    animation: lefttoright 0.8s ease forwards;
+}
+@keyframes lefttoright{
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#StartLine{
+    color: rgb(86, 86, 227);
+    font-weight: bold;
+}
+
+#Motto{
+    margin-bottom: 2.8rem;
+    font-size: 3rem;
+}
+
+#HeroPara{
+    color: rgb(114, 96, 96);
+    margin-bottom: 2.8rem;
+}
+
+#GuideButtons{
+    display: flex;
+    gap: 1.8rem;
+}
+
+#StartButton{
+    height: 3rem;
+    padding: 0.9rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(86, 86, 227) ;
+    transition: all 0.2s linear;
+}
+#StartButton:hover{
+        background-color: rgb(71, 71, 213);
+        border-color:  rgb(71, 71, 213);
+        border-radius: 0.4rem;
+    }
+
+
+#TourButton{
+    height: 3rem;
+    padding: 0.9rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(62, 62, 66) ;
+    transition: all 0.2s linear;
+}
+#TourButton:hover{
+    background-color: rgb(23, 23, 24);
+    border-color:  rgb(71, 71, 213);
+    border-radius: 0.4rem;
+}
+
+#Referrals{
+    margin-top: 15vh;
+    padding-bottom: 5vh;
+    height: 20vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.heading{
+    font-weight: 900;
+    text-align: center;
+}
+
+#Companies{
+    width: max-content;
+    display: flex;
+    padding: 1rem 2rem;
+    background-color: lightgray;
+    gap: 3.3rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.8rem;
+}
+
+.CompName{
+    display: flex;
+    height: 2rem;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    color: darkgray;
+    font-weight:900;
+}
+
+.CompName img{
+    height: 1.5rem;
+}
+
+#CardSection{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.7rem;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#CardSectionIntro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    max-width: 800px;
+    gap: 1rem;
+}
+
+#CardSectionPara{
+    text-align: center;
+    color: rgb(138, 136, 136);
+}
+
+#CardGrid{
+    margin-top: 1rem;
+    max-width: 800px;
+    height: 50rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
+    
+}
+
+.CardGrid{
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1rem;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.CardGrid h3{
+    font-weight: bold;
+}
+
+.CardGrid p{
+    font-size: 0.9rem;
+}
+
+.CardGrid img{
+    box-sizing: content-box;
+    height: 2rem;
+    width: 2rem;
+    border: solid 0.4rem white;
+    background-color: white;
+    border-radius: 2.5rem;
+    overflow: visible;
+}
+
+#Personalized-Grid{
+    background-color: #4a90e2;
+}
+
+#Affordability-Grid{
+    background-color: #FF6289 ;
+}
+
+#Partnerships-Grid{
+    background-color: #fcbf58;
+}
+
+#Technology-Grid{
+    background-color: #44bfc3;
+}
+
+#Support-Grid{
+    background-color: black;
+}
+
+#Analytics-Grid{
+    background-color: #7d78b1;
+}
+
+#TestimonialSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-content: center;
+    text-align: center;
+    max-width: 1220px;
+    margin:auto;
+    padding: 3rem 1rem;
+    gap: 1.5rem;
+}
+
+#TestimonialGrid{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1.5rem;
+}
+
+.Testimonialgrid{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1rem;
+    /* width: 23.5rem;
+    height: 16.5rem; main culprit*/
+    font-size: 0.9rem;
+    border: solid 0.8px rgb(121, 121, 121);
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-right: 1px;
+    padding-left: 1px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.Testimonialgrid:hover{
+    transform: scale3d(1.2);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border: 1px solid blue;
+}
+
+.Testimonialgrid img{
+    height: 6rem;
+    width: 6rem;
+}
+
+#NewsletterSection{
+    padding: 2rem;
+    height: 50vh;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#NewsletterSectionpart{
+    height: 100%;
+    display: flex;
+    background-color: lightgray;
+    gap: 7%;
+    margin: 0 auto;
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+
+#NewsletterSection img{
+    height: 100%;
+    width: 49%;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    align-content: start;
+}
+
+#form h1{
+    color:  rgb(86, 86, 227);
+    font-weight: bold;
+}
+
+#form p{
+    color: darkgray;
+    font-weight: bold;
+}
+
+#SignUp{
+    font-size: 0.9rem;
+}
+
+#disclaimering{
+    font-size: 0.7rem;
+}
+
+.form{
+    font-size: 1.4rem;
+}
+
+#newsletterbutton{
+    background-color: rgb(86, 86, 227);
+    margin-top: 0.55rem;
+    margin-right: 1rem;
+    height: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 0.4rem;
+    border-color: rgb(86, 86, 227) ;
+    transition: all 0.2s linear;
+}
+#newsletterbutton:hover{
+    background-color: rgb(71, 71, 213);
+    border-color:  rgb(71, 71, 213);
+    border-radius: 0.4rem;
+}
+
+#name{
+    padding: 0.3rem;
+}
+
+footer{
+    padding: 2rem;
+    height: 50vh;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    gap: 13vw;
+
+}
+
+.About{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: start;
+    gap: 1rem;
+}
+
+.About p{
+    color: darkgray;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+#StudySyncIcon1{
+    padding-top: 0.6rem;
+    width: 2rem;
+    height: 1.8rem;
+}
+
+#HeadTitle1{
+    display: inline;
+    font-size: 1.4rem;
+}
+
+#logo1{
+    margin-left: 0;
+    color: black;
+}
+
+#SocialMedia{
+    display: flex;
+    height: 1.7rem;
+    width: 10rem;
+    justify-content: space-between;
+    
+}
+
+.Pages{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    font-size: 0.85rem;
+    height: 30vh;
+    padding-top: 1rem;
+}
+
+#Products{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 1vh;
+    gap: 1.6vw;
+    margin-right: 1vw;
+    color: darkgray;
+}
+
+#Company{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 1vh;
+    margin-right: 1vw;
+    gap: 1.6vw;
+    max-width: 6vw;
+    text-wrap: wrap;
+}
+
+#Support{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 1vh;
+    gap: 1.6vw;
+}
+
+#Legal{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 1vh;
+    gap: 1.6vw;
+    margin-right: 1vw
+}
+
+#Copyright{
+    box-sizing: content-box;
+    padding: 2.5vh;
+    margin-top: 20vh;
+    border-top: solid 1px darkgray;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+@media (min-width: 641px) and (max-width: 840px) {
+    .footer{
+        flex-direction: column;
+        gap: 11vh;
+        width: 100%;
+    
+    }
+    .About{
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    .Pages{
+        width: 100%;
+    }
+}
+@media (max-width: 560px){
+    #NewsletterSection img{
+        display: none;
+    }
+    #form{
+        padding-left: 2.5rem;
+    }
+    #NewsletterSectionpart{
+        overflow:auto;
+    }
+    
+}
+
+@media (max-width: 641px) { 
+    #nav{
+        display: none;
+    }
+    header{
+        justify-content: space-between;
+    }
+    #Contact{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    #HeroSection{
+        flex-direction: column;
+        align-content: center;
+    }
+    #HeroContainer{
+        align-items: center;
+    }
+    #Motto{
+        text-align: center;
+    }
+    #HeroPara{
+        text-align: center;
+    }
+    #HeroImage{
+        width: 57%;
+        align-self: center;
+        height: 18rem;
+    }
+    #GuideButtons{
+        margin-bottom: 2rem;
+    }
+    #CardGrid{
+        grid-template-columns: repeat(1, 1fr);
+        height: 96rem;
+        padding-bottom: 1rem;
+        grid-gap: 2rem;
+    }
+    .Pages{
+        height:50rem;
+        gap: 10vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    #Company{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        max-width:max-content;
+    }
+    #Copyright{
+        margin: 0;
+        padding: 0;
+    }
+    #Products{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+
+    }
+    #Legal{
+        margin:0;
+        padding: 0;
+        text-align: center;
+    }
+    #Support{
+        margin:0;
+        padding: 0;
+        text-align: center;
+    }
+    .footer{
+        flex-direction: column;
+        gap: 3vh;
+        width: 100%;
+    }
+    .About p{
+        text-align: center;
+    }
+    .About{
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .Testimonialgrid{
+        max-width: 60vw;
+        padding: 0.5rem;
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+    #TestimonialGrid{
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+
+@media (max-width:330px) {
+    #Referrals{
+        flex-wrap: nowrap;
+        gap: 1.8rem;
+        align-items: center;
+        margin-top: 4rem;
+        margin-bottom: 11rem;
+    }
+    #Companies{
+        display: flex;
+        width: max-content;
+        gap: 1rem;
+        flex-direction: column;
+    }
+}
+
+@media (min-width:330px) and (max-width:641px) {
+    #Companies{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 1rem;
+        gap: 3rem;
+    }
+    #Referrals{
+        height: auto;
+        gap: 1.8rem;
+        margin-top: 4rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 910px){
+    #HeroSection{
+        gap: 4%;
+    }
+}
